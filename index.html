@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kalutara Vidyalaya National School</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-image: url('logo.jpg');
+            background-size: cover;
+            background-position: center;
+            color: black;
+            font-size: large;
+            padding: 2rem 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        header div {
+            position: relative;
+            z-index: 1;
+        }
+
+        footer {
+            background-color: #165307;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+        }
+
+        #contact {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact:hover {
+            color: #066d15;
+        }
+
+        #contact h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        #contact p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        #contact address {
+            font-style: normal;
+            line-height: 1.6;
+        }
+
+        #contact form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        #contact form .btn {
+            background-color: #146600;
+            border: none;
+        }
+
+        #contact form .btn:hover {
+            background-color: #11e70a;
+        }
+
+        @keyframes slideInFromLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .welcome-title,
+        .welcome-text,
+        .animated {
+            opacity: 0;
+            transition: opacity 1s, transform 1s;
+            animation: slideInFromLeft 1s forwards;
+        }
+
+        .welcome-text:hover {
+            color: #066d15;
+        }
+
+        .welcome-title:hover {
+            color: #066d15;
+        }
+
+        .visible-left {
+            animation: slideInFromLeft 1s forwards;
+        }
+
+        .visible-right {
+            animation: slideInFromRight 1s forwards;
+        }
+
+        .visible-top {
+            animation: slideInFromTop 1s forwards;
+        }
+
+        .visible-bottom {
+            animation: slideInFromBottom 1s forwards;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00660e;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0 1rem;
+        }
+
+        nav .nav-links {
+            display: flex;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #066d15;
+            transform: scale(1.1);
+            background-color: #0ae70a;
+        }
+
+        .navbar-light {
+            padding: 0;
+        }
+
+        .navbar-light .form-control {
+            margin-right: 0.5rem;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .navbar button:hover {
+            background-color: #85fd14;
+            opacity: 100;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: 500px;
+                padding: 1rem;
+            }
+
+            .nav .nav-links {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 0.5rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+
+        .container:hover {
+            color: #066d15;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border-radius: 5px;
+        }
+
+        /* Chat feature */
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00660e;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .chat-box {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 300px;
+            max-width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .chat-box-header {
+            background-color: #00660e;
+            color: white;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .chat-box-body {
+            padding: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .chat-box-footer {
+            padding: 10px;
+            display: flex;
+        }
+
+        .chat-box-footer input {
+            flex: 1;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .chat-box-footer button {
+            background-color: #00660e;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Calendar */
+        .calendar-container {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #4e664367;">
+    <header>
+        <div>
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 50px;"><b>Kalutara
+                    Vidyalaya</b></h1>
+            <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px;"><b>National
+                    School</b></p>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-links">
+            <a href="#home"><img src="favicon.png" width="40"></a>
+            <a href="#about">About Us</a>
+            <a href="#academics">Academics</a>
+            <a href="#extracurricular">Extracurricular</a>
+            <a href="#alumni">Alumni</a>
+            <a href="#events">Events</a>
+            <a href="#News">News</a>
+            <a href="#infrastructure">Infrastructure</a>
+            <a href="#admission">Admission</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="container" id="home">
+        <h1 class="welcome-title animate-on-scroll"><b>දෑ සමය සුරකිනු</b></h1>
+        <p class="welcome-text animate-on-scroll">Kalutara Vidyalaya is a Buddhist boys' school in Kalutara, Sri Lanka.
+            The college was founded in 1941 by Sir Cyril de Zoysa.
+            It is a national school providing primary and secondary education.</p>
+    </div>
+
+    <div class="container" id="about">
+        <h2 class="animated fadeIn animate-on-scroll">About Us</h2>
+        <p class="animated fadeIn animate-on-scroll">Kalutara Vidyalaya was established in 1941 by Sir Cyril de Zoysa.
+            Initially a mixed school, it became a boys' school in 1942. During World War II, the Royal Air Force took
+            over the school, but it reopened as a national school in 1998.
+            The school's mission is "To produce balanced personalities who can protect their nation and religion".</p>
+    </div>
+
+    <div class="container" id="academics">
+        <h2 class="animated fadeIn animate-on-scroll">Academics</h2>
+        <p class="animated fadeIn animate-on-scroll">Kalutara Vidyalaya offers education from grades 1 to 13, with
+            streams in Science, Commerce, and Arts for A/L students.
+            The school prides itself on high academic standards, especially in national exams like Grade Five
+            Scholarship, G.C.E O/L, and A/L exams.</p>
+    </div>
+
+    <div class="container" id="extracurricular">
+        <h2 class="animated fadeIn animate-on-scroll">Extracurricular Activities</h2>
+        <p class="animated fadeIn animate-on-scroll">Kalutara Vidyalaya offers a wide range of extracurricular
+            activities, including cricket, football, chess, hockey, karate, and athletics.
+            The school has produced notable athletes such as Thilakaratne Dilshan. There are various clubs and
+            societies, including the Buddhist Society, Science Society, and more.</p>
+    </div>
+
+    <div class="container" id="alumni">
+        <h2 class="animated fadeIn animate-on-scroll">Notable Alumni</h2>
+        <p class="animated fadeIn animate-on-scroll">Kalutara Vidyalaya has produced many notable alumni who have
+            excelled in various fields. Some of the distinguished alumni include:
+        <ul>
+            <li>Thilakaratne Dilshan - World Renowned Cricketer</li>
+            <li>W D Amaradewa - World Renowned Music Artist</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="container" id="events">
+        <h2 class="animated fadeIn animate-on-scroll">Annual Events</h2>
+        <p class="animated fadeIn animate-on-scroll">Kalutara Vidyalaya hosts several annual events that bring the
+            school community together. These include:
+        <ul>
+            <li>Annual Sports Meet</li>
+            <li>School Concert</li>
+            <li>Prize Giving Ceremony</li>
+            <li>Annual Walk Parade</li>
+            <li>Annual Cricket Match</li>
+        </ul>
+        </p>
+    </div>
+    <div class="container" id="News">
+        <h2 class="animated fadeIn animate-on-scroll">News</h2>
+        <p class="animated fadeIn animate-on-scroll">
+        <div class="card">
+            <img src="news.jpg" class="card-img-top" alt="news">
+            <div class="card-body">
+                <h5 class="card-title">14th Battle of the Mangosteen</h5>
+                <p class="card-text">The annual cricket encounter between Kalutara Vidyalaya and Tissa
+                    Central College</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+
+        <br>
+
+        <p style="font-size: larger;"><b>Kalutara Vidyalaya vs Tissa Central College | 14th Limited Overs Encounter</b>
+        </p>The 14th Annual Limited
+        Overs
+        Cricket Encounter between Kalutara Vidyalaya and Tissa Central College will be played on the 05th of May at the
+        Tyronne Fernando Stadium, Moratuwa. Get your tickets NOW!</p>
+    </div>
+
+    <div class="container" id="infrastructure">
+        <h2 class="animated fadeIn animate-on-scroll">Infrastructure</h2>
+        <p class="animated fadeIn animate-on-scroll">Kalutara Vidyalaya boasts excellent infrastructure to support its
+            educational and extracurricular programs. Key facilities include:
+        <ul>
+            <li>Modern Classrooms</li>
+            <li>Science Laboratories</li>
+            <li>Computer Laboratories</li>
+            <li>Library</li>
+            <li>Sports Complex</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="container" id="admission">
+        <h2 class="animated fadeIn animate-on-scroll">Admission</h2>
+        <p class="animated fadeIn animate-on-scroll">Admission to Kalutara Vidyalaya is competitive and based on
+            academic merit and other criteria. The school accepts applications for primary and secondary grades, with
+            specific entry requirements for each level.
+        <ul>
+            <li>Grade 1 Admission - Based on applications and interviews</li>
+            <li>Grade 6 Admission - Based on Grade Five Scholarship Exam results</li>
+            <li>Grade 12 Admission - Based on G.C.E O/L results</li>
+        </ul>
+        </p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container" id="gallery">
+        <h2 class="animated fadeIn animate-on-scroll">Gallery</h2>
+        <div class="gallery">
+            <img src="logo.jpg" alt="Image 1">
+            <img src="logo.jpg" alt="Image 2">
+            <img src="logo.jpg" alt="Image 3">
+            <img src="logo.jpg" alt="Image 4">
+        </div>
+    </div>
+
+    <!-- Calendar -->
+    <div class="calendar-container" id="calendar">
+        <h2 class="animated fadeIn animate-on-scroll">School Calendar</h2>
+        <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=your_timezone"
+            style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container" id="contact">
+        <h2 class="animated fadeIn animate-on-scroll">Contact Us</h2>
+        <p class="animated fadeIn animate-on-scroll">We would love to hear from you! Please reach out to us using the
+            following contact details:</p>
+        <address class="animated fadeIn animate-on-scroll">
+            <strong>Kalutara Vidyalaya National School</strong><br>
+            Kalutara, Sri Lanka<br>
+            Phone: +94 34 222 1234<br>
+            Email: info@kalutaravidyalaya.sch.lk
+        </address>
+        <form class="animated fadeIn animate-on-scroll">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Chat Feature -->
+    <button class="chat-button" onclick="toggleChat()">💬</button>
+    <div class="chat-box">
+        <div class="chat-box-header">Chat with Us</div>
+        <div class="chat-box-body">
+            <p>Welcome to Kalutara Vidyalaya! How can we help you?</p>
+        </div>
+        <div class="chat-box-footer">
+            <input type="text" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kalutara Vidyalaya National School. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleChat() {
+            const chatBox = document.querySelector('.chat-box');
+            chatBox.style.display = chatBox.style.display === 'none' || chatBox.style.display === '' ? 'block' : 'none';
+        }
+
+        function sendMessage() {
+            const chatBoxBody = document.querySelector('.chat-box-body');
+            const input = document.querySelector('.chat-box-footer input');
+            const message = input.value.trim();
+            if (message) {
+                const messageElem = document.createElement('p');
+                messageElem.textContent = message;
+                chatBoxBody.appendChild(messageElem);
+                input.value = '';
+                chatBoxBody.scrollTop = chatBoxBody.scrollHeight;
+            }
+        }
+    </script>
+</body>
+
+</html>
