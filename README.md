@@ -21,3 +21,6 @@ The chat feature includes a button to toggle a chat box, allowing users to send 
 
 
 ![Screenshot 2024-07-04 194932](https://github.com/devindu22/Kalutara_Vidyalaya/assets/114844896/8c99217d-e4a5-452d-a331-e51c1df0d6a9)
+
+
+![Screenshot 2024-07-04 195507](https://github.com/devindu22/Kalutara_Vidyalaya/assets/114844896/e69bd824-a50d-459b-87b7-891ac2865762)
