@@ -12,7 +12,7 @@ Content sections include detailed information about the school, its history, aca
 
 The chat feature includes a button to toggle a chat box, allowing users to send messages. The page uses Bootstrap for styling and responsiveness, with additional custom CSS for specific styles and animations, such as slide-in effects for elements on scroll. JavaScript functions handle the chat feature's interactivity.
 
-
+## Screenshots 
 
 ![Screenshot 2024-07-04 194839](https://github.com/devindu22/Kalutara_Vidyalaya/assets/114844896/85e332fa-5990-4dc9-ae62-d3c3d632d9ee)
 
