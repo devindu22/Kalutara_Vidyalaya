@@ -22,9 +22,10 @@ The chat feature includes a button to toggle a chat box, allowing users to send 
 
 ![Screenshot 2024-07-04 194909](https://github.com/devindu22/Kalutara_Vidyalaya/assets/114844896/a16c64a7-0754-4832-9ee9-e2f5515bde0c)
 
-### Gallery and Calender Function
+### Gallery and Calendar Function
 
 ![Screenshot 2024-07-04 194932](https://github.com/devindu22/Kalutara_Vidyalaya/assets/114844896/8c99217d-e4a5-452d-a331-e51c1df0d6a9)
 
+### Contact Form and Message Chat Box
 
 ![Screenshot 2024-07-04 195507](https://github.com/devindu22/Kalutara_Vidyalaya/assets/114844896/e69bd824-a50d-459b-87b7-891ac2865762)
