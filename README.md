@@ -6,7 +6,7 @@ Kalutara Vidyalaya National School, located in the coastal town of Kalutara in S
 
 With a student body that reflects the region's cultural diversity, Kalutara Vidyalaya National School promotes values of unity, discipline, and integrity. The dedicated faculty and staff work tirelessly to ensure students receive a well-rounded education that prepares them for future challenges. The school's modern and well-equipped facilities provide a conducive learning and personal growth environment.
 
-Kalutara Vidyalaya National School takes pride in its alumni, many of whom have achieved significant success in various fields both locally and internationally. The school's motto, "Vidya Dadati Vinayam" (Knowledge Gives Humility), encapsulates its ethos and commitment to nurturing knowledgeable, humble, and socially responsible individuals.
+Kalutara Vidyalaya National School takes pride in its alumni, many of whom have achieved significant success in various fields locally and internationally. The school's motto, "Vidya Dadati Vinayam" (Knowledge Gives Humility), encapsulates its ethos and commitment to nurturing knowledgeable, humble, and socially responsible individuals.
 
 The HTML document creates a responsive webpage for Kalutara Vidyalaya National School, featuring a header, navigation bar, content sections, a contact form, a chat feature, and a footer. The header includes the school name and motto with a background image. The navigation bar contains links to various sections like About Us, Academics, Extracurricular, Alumni, Events, News, Infrastructure, Admission, and Contact.
 
