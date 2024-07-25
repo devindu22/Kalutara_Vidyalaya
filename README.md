@@ -2,7 +2,7 @@
 
 <hr>
 
-Kalutara Vidyalaya Naional School, located in the coatal town of Kalutara in Sri Lanka, is a prominent educational institution with a rich history and a strong commitment to academic excllence. Founded in 1941, the school has become a respected center for learning, known for its holistic approach to education. It offers a diverse range of academic programs, extracurricular activities, and sports, fostering the all-round development of its students.
+Kalutara Vidyalaya National School, located in the coatal town of Kalutara in Sri Lanka, is a prominent educational institution with a rich history and a strong commitment to academic excllence. Founded in 1941, the school has become a respected center for learning, known for its holistic approach to education. It offers a diverse range of academic programs, extracurricular activities, and sports, fostering the all-round development of its students.
 
 With a student body that reflects the region's cultral diversity, Kalutara Vidyalaya National School promotes values of unity, discipline, and integrity. The dedicated faculty and staff work tirelessly to ensure students receive a well-rounded education that prepares them for future challenges. The school's modern and well-equipped facilities provide a conducive learning and personal growth environment.
 
