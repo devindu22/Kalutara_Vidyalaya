@@ -12,7 +12,7 @@ The HTML document creates a responsive webpage for Kalutara Vidyalaya National S
 
 Content sections include detailed information about the school, its history, academic offerings, extracurricular activities, notable alumni, annual events, news, infrastructure, and admission process. The gallery section displays images, and the calendar section embeds a Google Calendar. The contact section provides contact details and a form for visitors to reach out.
 
-The chat feature includes a button to toggle a chat box, allowing users to send messages. The pge uses Bootstrap for styling and responsivenss, with additional custom CSS for specific styles and animations, such as slide-in effects for elements on scroll. JavaScript functions handle the chat feature's interactivity.
+The chat feature includes a button to toggle a chat box, allowing users to send messages. The pge uses Bootstrap for styling and responsiveness, with additional custom CSS for specific styles and animations, such as slide-in effects for elements on scroll. JavaScript functions handle the chat feature's interactivity.
 
 <hr>
 
