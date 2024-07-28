@@ -8,7 +8,7 @@ With a student body that reflects the region's cultural diversity, Kalutara Vidy
 
 Kalutara Vidyalaya National School takes pride in its alumni, who have achieved significant success in various fields locally and internationally. The school's motto, "Vidya Dadati Vinayam" (Knowledge Gives Humility), encapsulates its ethos and commitment to nurturing knowledgeable, humble, and socially responsible individuals.
 
-The HTML document creates a responsive webpage for Kalutara Vidyalaya National School, featuring a header, navigation bar, content sections, a contact form, a chat feature, and a footer. The header includes the school name and motto with a backgrund image. The navigation bar contains links to various sections like About Us, Academics, Extracurricular, Alumni, Events, News, Infrastructure, Admission, and Contact.
+The HTML document creates a responsive webpage for Kalutara Vidyalaya National School, featuring a header, navigation bar, content sections, a contact form, a chat feature, and a footer. The header includes the school name and motto with a background image. The navigation bar contains links to various sections like About Us, Academics, Extracurricular, Alumni, Events, News, Infrastructure, Admission, and Contact.
 
 Content sections include detailed information about the school, its history, academic offerings, extracurricular activities, notable alumni, annual events, news, infrastructure, and admission process. The gallery section displays images, and the calendar section embeds a Google Calendar. The contact section provides contact details and a form for visitors to reach out.
 
